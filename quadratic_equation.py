@@ -11,6 +11,4 @@ def get_roots(coef_a, coef_b, coef_c):
         return root1, root2
     else:
         return None, None
-    
-if __name__ == '__main__':
-    print(get_roots(1, 2, -3))
+
