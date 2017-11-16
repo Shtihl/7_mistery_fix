@@ -1,14 +1,13 @@
 from math import sqrt
 
 
-def get_roots(coef_a, coef_b, coef_c):
-    discriminant = coef_b ** 2 - 4 * coef_a * coef_c
-    if discriminant >= 0:
-        root1 = (-coef_b - sqrt(discriminant)) / (2 * coef_a)
-        root2 = None
-        if discriminant > 0:
-            root2 = (-coef_b + sqrt(discriminant)) / (2 * coef_a)
-        return root1, root2
+def get_roots(a, b, c):
+    discriminant = b ** 2 - 4 * a * c
+    if discriminant < 0: return None, None
+    root1 = (-b - sqrt(discriminant)) / (2 * a)
+    root2 = (-b + sqrt(discriminant)) / (2 * a)
+    if discriminant == 0:
+        return root1, None
     else:
-        return None, None
+        return root1, root2
 

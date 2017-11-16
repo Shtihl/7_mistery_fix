@@ -9,7 +9,7 @@
 Пример использования в коде:
 ```
 >>> from quadratic_equation import get_roots
->>> print(get_roots(coef_a, coef_b, coef_c)) # где a, b и c - коэффициенты 
+>>> print(get_roots(a, b, c)) # где a, b и c - коэффициенты 
 ```
 
 Возвращает два корня, если дискриминант квадратного уравнения больше нуля
